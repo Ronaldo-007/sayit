@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYH-fYqpnCt3gsml2tNAPePXDeSuEAxMtyIw&usqp=CAU"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="orol">OROLLAR</a></li>
+                    <li><a href="okean">OKEANLAR</a></li>
+                    <li><a href="footer">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="text-box">
+            <h1>Dunyodagi Dengizlar haqida</h1>
+            <p>Yerning eng yirik dengizlari haqida ma'lumot oling <br>Dengizlar Yer yuzidagi suvning katta qismini
+                tashkil etganligi sababli, Erning asosiy dengizlari qaerda ...
+            </p>
+            <a href="#" class="hero-btn">Visit Us To know More</a>
+
+        </div>
+    </section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="hover">
+                    <h4>O'rtayer dengizi</h4>
+                    <span><img src="https://figgysfoodtruck.com/img/10-largest-seas-in-world.jpg" class="suv w-100"
+                            alt=""></span>
+                </div>
+                <div>
+                    <p> • Maydoni: 1.144.800 km2 (2.965.800 kv km)
+                        • O'rtacha chuqurlik: 4,688 fut (1429 m)
+                        • Okean: Atlantika okeani
+
+                        O'rta dengiz dengizga quyiladigan daryolardan ko'ra ko'proq bug'lanish orqali suv yo'qotadi.
+                        Shunday
+                        qilib, Atlantika okeanidan doimiy oqimga ega.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="hover">
+                    <h4>Karib dengizi</h4>
+                    <span><img src="https://figgysfoodtruck.com/img/10-largest-seas-in-world-2.jpg" class="suv w-100"
+                            alt=""></span>
+                </div>
+                <div>
+                    <p> • Maydoni: 1049,500 kvadrat mil (2 718 200 kv. Km)
+                        • O'rtacha chuqurlik: 8,685 fut (2647 m)
+                        • Okean: Atlantika okeani
+
+                        Karib dengizi yiliga o'rtacha sakkizta dovulni boshdan kechiradi, ularning eng ko'pi sentyabrda
+                        sodir
+                        bo'ladi; mavsum iyundan noyabrgacha davom etadi.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="hover">
+                    <h4>Janubiy Xitoy dengizi</h4>
+                    <span><img src="https://figgysfoodtruck.com/img/10-largest-seas-in-world-3.jpg" class="suv w-100"
+                            alt=""></span>
+                </div>
+                <div>
+                    <p> • Maydoni: 895,400 kvadrat mil (2,319,000 kv km)
+                        • O'rtacha chuqurlik: 5,419 fut (1,652 m)
+                        • Okean: Tinch okeani
+
+                        Janubiy Xitoy dengizidagi cho'kindilar turli xil vulqonlar otilishidan, shu jumladan 1883 yilda
+                        paydo
+                        bo'lgan Krakatada ham chuqur va sayoz suvlarda vulqon kulini o'z ichiga oladi.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="hover">
+                    <h4>Bering dengizi</h4>
+                    <span><img src="https://figgysfoodtruck.com/img/10-largest-seas-in-world-4.jpg" class="suv w-100"
+                            alt=""></span>
+                </div>
+                <div>
+                    <p> • Maydoni: 884,900 km2 (2 291,900 kv km)
+                        • O'rtacha chuqurlik: 5,075 fut (1547 m)
+                        • Okean: Tinch okeani
+
+                        Bering Straight chuqurliklari o'rtacha 100 dan 165 fut (30-50 m) orasida, ammo Bering
+                        dengizining eng
+                        chuqur joyi Bowers havzasida 13,442 fut (4,097 m) gacha tushadi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="orol">
+
+        <div class="text-box">
+            <h1>Orollar</h1>
+
+            </p>
+            <a href="#" class="hero-btn">Visit Us To know More</a>
+
+        </div>
+    </section>
+
+    <div class="container py-5 compus">
+        <h2 class="text-center">Yer yuzidagi eng katta uch orol</h2>
+        <div class="row py-5">
+            <div class=" col-12 col-md-4 col-lg-4 cen">
+                <div class="layer">
+                    <h4>Grenlandiya, shimoliy Atlantika</h4>
+                </div>
+                <img src="https://i0.wp.com/batop.ru/sites/default/files/samye-krupnye-ostrova10.jpg" alt=""
+                    class="w-100">
+
+            </div>
+
+            <div class=" col-12 col-md-4 col-lg-4 cen">
+                <div class="layer">
+                    <h4>Tinch okeanining janubi-g'arbiy qismida yangi Gvineya</h4>
+                </div>
+                <img src="https://i0.wp.com/batop.ru/sites/default/files/samye-krupnye-ostrova1.jpg" alt=""
+                    class="w-100">
+
+            </div>
+            <div class=" col-12 col-md-4 col-lg-4 cen">
+                <div class="layer">
+                    <h4>Bo'ycheo</h4>
+                </div>
+                <img src="https://i1.wp.com/batop.ru/sites/default/files/samye-krupnye-ostrova2.jpg" alt=""
+                    class="w-100">
+
+            </div>
+        </div>
+    </div>
+
+    <section class="okean">
+        <div class="text-box">
+            <h1>Okeanlar</h1>
+
+            </p>
+            <a href="#" class="hero-btn">Visit Us To know More</a>
+
+        </div>
+    </section>
+
+    <div class="okeanlar">
+        <div class="row py-5 px-5 mx-5">
+            <div class="col-sm-6 col-md-4 col-lg-3 " data-aos="fade-down-right">
+                <h4 class="text-center text-primary">Tinch okeani</h4>
+                <div class="image"><span><img src="tinch.jpg" alt=""></span></div>
+
+
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down-right">
+                <h4 class="text-center text-primary">Atlantika okeani</h4>
+                <div class="image"><span><img src="atlantik.webp" alt=""></span></div>
+
+
+
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down-left">
+                <h4 class="text-center text-primary">Hind okeani</h4>
+                <div class="image"><span><img src="hind.webp" alt=""></span></div>
+
+
+
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down-left">
+
+
+
+
+                <h4 class="text-center text-primary">Artika okeani</h4>
+                <div class="image"><span><img src="artika.webp" alt=""></span></div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-5">
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/vertical-shot-male-swimming-underwater-with-sky-background_181624-1545.jpg"
+                        alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/sun-lay-lake-view-landscape_174392-16.jpg" alt="">
+                </div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/grjotagja-cave-hot-spring-iceland_31965-6037.jpg"
+                        alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/aerial-view-beautiful-small-island-iceland_131985-874.jpg"
+                        alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/stone-shore-lake-sunset_159938-2464.jpg" alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/man-with-kayak-island-aerial-view_220909-88.jpg"
+                        alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/foamy-waves-atlantic-ocean-with-jet-ski-rider_181624-12251.jpg"
+                        alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/single-boat-middle-clear-blue-sea_181624-16390.jpg"
+                        alt=""></div>
+                <div class="swiper-slide image"><img
+                        src="https://image.freepik.com/free-photo/breathtaking-view-wave-concept-surfing_181624-25980.jpg"
+                        alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="orta">
+            <h4>About US</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eius sint cupiditate rerum ea,<br> minima ex voluptatibus eaque
+                nulla qui neque? </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+        </div>
+
+        <!-- Swiper JS -->
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
